@@ -1,0 +1,208 @@
+/* styles.css
+   Author: Manpreet Kaur
+   Student no: c0958653
+*/
+
+/* --- Reset --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f3f6f9; 
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+}
+
+/* Container centers the page and defines page width */
+.container {
+  width: 100%;
+  padding: 12px;
+  min-height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(20, 40, 60, 0.08);
+  overflow: hidden;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: white; /* header background */
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Banner image inside header */
+.site-header .banner {
+  max-width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---------- Navigation ---------- */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: 1px solid rgba(10,10,10,0.04);
+  border-radius: 8px;
+}
+
+/* Logo top-left */
+.site-nav .logo img {
+  display: block;
+  border-radius: 8px;
+}
+
+/* Nav list */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  margin-left: 8px;
+  flex-wrap: wrap;
+}
+
+/* Nav links style */
+.nav-list a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #08364a;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: rgba(11,107,140,0.08);
+}
+
+/* ---------- Main / Hero ---------- */
+.site-main {
+  display: block;
+  margin: 8px 12px;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(10,10,10,0.04);
+  text-align: center;
+  flex: 1 1 auto; /* allow main to expand to fill */
+}
+
+.hero h1 {
+  font-size: 2.2rem; /* larger heading */
+  margin-bottom: 8px;
+  color: #0b6b8c; /* changed color for one heading as requested */
+}
+
+.lead {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  color: #394f56;
+}
+
+/* Figure and caption */
+.hero-figure {
+  margin: 16px auto;
+}
+
+.hero-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero-figure figcaption {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: #606f75;
+}
+
+/* Buttons / CTAs */
+.btn {
+  display: inline-block;
+  margin: 8px 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  background: #0b6b8c;
+  color: white;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #0b6b8c;
+  color: #0b6b8c;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(10,10,10,0.04);
+}
+
+.site-footer a { color: #0b6b8c; text-decoration: none; }
+.site-footer p { margin: 6px 0; }
+
+/* ---------- Lists ---------- */
+ul { list-style: disc inside; margin-left: 18px; }
+ol { list-style: decimal inside; margin-left: 18px; }
+
+/* ---------- Small responsive touches ---------- */
+@media (max-width: 700px) {
+  .container { margin: 8px; min-height: 100vh; }
+  .hero h1 { font-size: 1.6rem; }
+  .nav-list { gap: 6px; font-size: 0.95rem; }
+}
+
+.special-img {
+    width: 300px;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* ABOUT PAGE */
+.about-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    margin-left: 20px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+
